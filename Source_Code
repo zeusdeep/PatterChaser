@@ -1,27 +1,35 @@
+
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
+
 class Ideone
 {
 	public static void PatternChaser(String str)
 	{
 	    String temp[]={"","","","","","","","","","",""};
 	    char t[]=new char[20];
+	    int count=0;
 		for(int i=0;i<str.length();i++)
 		{
 			
 			for(int j=i;j<str.length();j++)
 			{
 				temp[i]+=str.charAt(j);
-			}	
+					System.out.println(temp[i]);
+					if(temp[i].equals(str.substring(i+1,i+temp[i].length())
+					{
+						count ++;
+						
+					}
+			}
+		
 		
 			
 		}
-		System.out.println("temporary is "+ temp[0]);
-			System.out.println("temporary is "+ temp[1]);
-				System.out.println("temporary is "+ temp[2]);
+	
 		
 	}
 	public static void main (String[] args) throws java.lang.Exception
