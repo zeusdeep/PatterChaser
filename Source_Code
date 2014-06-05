@@ -1,5 +1,3 @@
-
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -18,10 +16,13 @@ class Ideone
 			for(int j=i;j<str.length();j++)
 			{
 				temp[i]+=str.charAt(j);
-					System.out.println(temp[i]);
-					if(temp[i].equals(str.substring(i+1,i+temp[i].length())
+					System.out.println("TEMPORARY : " +temp[i]);
+					System.out.println("SUBSTRING : " +str.substring(i+1,i+temp[i].length()));
+					if(temp[i].equals(str.substring(i+1,i+temp[i].length())))
 					{
+						System.out.println(str.substring(i+1,i+temp[i].length()));
 						count ++;
+						System.out.println(temp[i]+" with count "+count);
 						
 					}
 			}
@@ -34,7 +35,7 @@ class Ideone
 	}
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		String inp="abc";
+		String inp="abab";
 		PatternChaser(inp);
 	}
 }
